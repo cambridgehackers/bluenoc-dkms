@@ -38,3 +38,10 @@ clean:
 	rm -f Module.symvers Module.markers modules.order
 	rm -f .bluenoc.ko.cmd .bluenoc.mod.o.cmd .bluenoc.o.cmd .bluenoc.ko.unsigned.cmd bluenoc.ko.unsigned
 	rm -fr .tmp_versions
+
+install-dkms:
+	mkdir -p $(DESTDIR)$(PREFIX)/src/$(PKG_NAME)-$(VERSION)
+	sed "s/@VERSION@/$(VERSION)/" dkms.conf | sed "s/@PKG_NAME@/$(PKG_NAME)/" > dkms.conf.out
+	cp -fv dkms.conf.out $(DESTDIR)$(PREFIX)/src/$(PKG_NAME)-$(VERSION)/dkms.conf
+	cp -fv Makefile bluenoc.c bluenoc.h $(DESTDIR)$(PREFIX)/src/$(PKG_NAME)-$(VERSION)/
+

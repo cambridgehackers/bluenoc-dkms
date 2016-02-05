@@ -1,4 +1,11 @@
+PKG_NAME=bluenoc-dkms
 VERSION=2015.09
+
+all:
+	echo nothing to make
+
+install:
+	make -C src install-dkms
 
 spkg:
 	git clean -fdx
