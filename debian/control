@@ -1,0 +1,12 @@
+Source: bluenoc-dkms
+Section: devel
+Priority: extra
+Maintainer: Jamey Hicks <jamey.hicks@gmail.com>
+Build-Depends: debhelper (>= 8.0.0), dkms
+Standards-Version: 3.9.2
+Homepage: https://github.com/cambridgehackers/bluenoc-dkms
+
+Package: bluenoc-dkms
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, dkms, fpgamake, buildcache, fpgajtag, pciescan
+Description: bluenoc device driver

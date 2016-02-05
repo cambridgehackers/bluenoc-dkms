@@ -1,0 +1,6 @@
+bluenoc-dkms (2015.09-1precise1) precise; urgency=medium
+
+  * Packaged bluenoc driver for dkms installation
+
+ -- Jamey Hicks <jamey.hicks@gmail.com>  Fri, 05 Feb 2016 11:55:37 -0500
+
