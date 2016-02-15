@@ -1,5 +1,5 @@
 PKG_NAME=bluenoc-dkms
-VERSION=2015.09
+VERSION=16.02.3
 
 all:
 	echo nothing to make
